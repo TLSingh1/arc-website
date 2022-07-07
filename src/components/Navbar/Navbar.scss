@@ -23,8 +23,8 @@
   align-items: center;
 
   img {
-    width: 15vw;
-    height: 3vh;
+    width: 300px;
+    height: 25px;
     filter: invert(55%) sepia(96%) saturate(2736%) hue-rotate(172deg) brightness(88%) contrast(89%);
 
     @media screen and (min-width: 2000px) {
