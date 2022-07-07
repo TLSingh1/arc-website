@@ -1,42 +1,10 @@
-import React, { useState, useEffect } from "react"
+import React, { useState  } from "react"
 import "./Testimonial.scss"
-import { motion } from "framer-motion"
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi"
 import { AppWrap, MotionWrap } from "../../wrapper"
-import { urlFor, client } from "../../client"
-
-const NavDots = ({ active }) => {
-  const elements = [0, 1, 2, 3]
-  return (
-    <div>
-      {elements.map((obj, i) => (
-        <button key={i}>click</button>
-      ))}
-    </div>
-  )
-}
 
 const Testimonial = () => {
-	const [brands, setBrands] = useState([])
-	const [testimonials, setTestimonials] = useState([])
-	const [currentIndex, setCurrentIndex] = useState(0)
-
   const [pointer, setPointer] = useState(0);
-
-	useEffect(() => {
-		const query = '*[_type == "testimonials"]'
-		const brandsQuery = '*[_type == "brands"]'
-
-		client.fetch(query).then((data) => {
-			setTestimonials(data)
-		})
-
-		client.fetch(brandsQuery).then((data) => {
-			setBrands(data)
-		})
-	}, [])
-
-	const test = testimonials[currentIndex]
 
 	const handleLeft = () => {
     if (pointer === 3) { setPointer(2)}
@@ -53,12 +21,19 @@ const Testimonial = () => {
 	return (
 		<>
 			<h2 className='head-text'>Fundraising for <span style={{color:"blue"}}>Charities</span></h2>
-			{testimonials.length && (
 				<>
 					<div className="app__testimonial-item app__flex">
 						<div className="app__testimonial-content">
 							{(() => {
 								switch (pointer) {
+									default:
+										return (
+											<p>
+												ARC US is committed to several causes. Among these are
+												the Civil Air Patrol (CAP) and the American Heart
+												Association (AHA) and the American Stroke Association.
+											</p>
+										)
 									case 0:
 										return (
 											<p>
@@ -95,6 +70,7 @@ const Testimonial = () => {
 												<a
 													href="https://raiseyourwayforaha.funraise.org/fundraiser/kamal-singh"
 													target="_blank"
+													rel="noreferrer"
 												>
 													https://raiseyourwayforaha.funraise.org/fundraiser/kamal-singh
 												</a>{" "}
@@ -118,7 +94,6 @@ const Testimonial = () => {
 						</div>
 					</div>
 				</>
-			)}
 		</>
 	)
 }
