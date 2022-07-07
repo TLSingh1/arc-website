@@ -17,7 +17,9 @@ const NavDots = ({ active }) => {
 }
 
 const Testimonial = () => {
+	const [brands, setBrands] = useState([])
 	const [testimonials, setTestimonials] = useState([])
+	const [currentIndex, setCurrentIndex] = useState(0)
 
   const [pointer, setPointer] = useState(0);
 
@@ -29,7 +31,12 @@ const Testimonial = () => {
 			setTestimonials(data)
 		})
 
+		client.fetch(brandsQuery).then((data) => {
+			setBrands(data)
+		})
 	}, [])
+
+	const test = testimonials[currentIndex]
 
 	const handleLeft = () => {
     if (pointer === 3) { setPointer(2)}
