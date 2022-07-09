@@ -135,10 +135,17 @@ const Blog = () => {
 						tentative stops planned are:
 					</p>
 				</div>
-				<div className="app__blog-footer">
-					<h1>Follow the trip in real time from the blog</h1>
-					<a href="https://www.google.com" target="blank">Coming Soon</a>
+				<div>
+					<div className="app__blog-footer">
+						<h1>Follow the trip in real time from the blog</h1>
+						<a href="https://www.google.com" target="blank">Starting Soon</a>
+					</div>
+					<div className="app__blog-footer">
+						<h1>Or from the in-flight tracker</h1>
+						<a href="https://flightaware.com/live/flight/13ARC" target="blank">Starting Soon</a>
+					</div>
 				</div>
+				
 			</div>
 		</>
 	)

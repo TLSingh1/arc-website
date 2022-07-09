@@ -43,16 +43,11 @@ const Footer = () => {
 						krsingh@arc-us-ca.com
 					</a>
 				</div>
-				<div className="app__footer-card">
-					<img src={images.mobile} alt="mobile" />
-					<a href="tel: +1 (206) 412-3462" className="p-text">
-						+1 (206) 412-3462
-					</a>
-				</div>
 			</div>
 
 			{!isFormSubmitted ? (
 				<div className="app__footer-form app__flex">
+					<h3>Or privately message me below</h3>
 					<div className="app__flex">
 						<input
 							className="p-text"
