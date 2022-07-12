@@ -6,6 +6,7 @@ import Header from './container/Header/Header'
 import Testimonial from './container/Testimonial/Testimonial'
 import Work from './container/Work/Work'
 import Blog from './container/Blog/Blog'
+import Skills from './container/Skills/Skills'
 
 import { Navbar } from './components'
 import './App.scss'
@@ -17,6 +18,7 @@ const App = () => {
       <Header />
       <About />
       <Work />
+      <Skills />
       <Testimonial />
       <Footer />
       <Blog />

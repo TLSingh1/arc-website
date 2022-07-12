@@ -18,7 +18,7 @@ const Work = () => {
 			<h2 className="head-text">
 				Current Consulting Services <br /> <span>(2022 Onwards)</span>
 			</h2>
-			<p>ARC US offers over 40 years of experience in the following domains:</p>
+			<h2 style={{ marginBottom: '1vh'}}>ARC US offers over 40 years of experience in the following domains:</h2>
 			<div className="app__work-filter">
 				{projects.map((item, index) => (
 					<div

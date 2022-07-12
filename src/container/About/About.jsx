@@ -1,7 +1,6 @@
 import React from 'react'
 import './About.scss'
 import { AppWrap, MotionWrap } from '../../wrapper'
-import HTMLReactParser from 'html-react-parser'
 
 const About = () => {
   return (
@@ -20,7 +19,7 @@ const About = () => {
           <h1>1993</h1>
           <img src={require('../../assets/airport1.jpg')} alt=''/>
           <p>
-            ARC US established its presence in the US in 1993 and in 1996, moved its headquarters to the US where it established a presence in Texas concurrent with a major contract with Sabre Inc. In 2001, ARC US moved its headquarters to Point Roberts, WA, and its development office to Shanghai, PRC. Over twenty-five years of success in developing and distributing the most advanced airport/airspace simulation tool on the market, ARCport
+            ARC US established its presence in the US in 1993 and in 1996, moved its headquarters to the US where it established a presence in Texas concurrent with a major contract with Sabre Inc. In 2001, ARC US moved its headquarters to Point Roberts, WA, and its development office to Shanghai, PRC. Over twenty-five years of success in developing and distributing the most advanced airport/airspace simulation tool on the market, ARCport.
           </p>
         </div>
         <div className='app__about-history'>
