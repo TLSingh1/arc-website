@@ -164,7 +164,7 @@
 		margin: 3%;
 		padding: 1%;
 		width: 80%;
-		border: 2px solid black;
+		border: 2px solid rgb(0, 0, 0);
 		box-shadow: 3px 6px;
 		border-radius: 10px;
 	}
@@ -188,4 +188,8 @@
 
 .grow {
   font-size: 1.25vw;
+}
+
+.outline {
+  border: 1px solid rgb(125, 125, 125);
 }

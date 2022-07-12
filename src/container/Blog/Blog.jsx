@@ -125,27 +125,36 @@ const Blog = () => {
 						will be using that call sign with all ATC and Air-Ground
 						communications as well as a live location update via a SPOT 4 GPS
 						Satellite Messenger. You may view the current location of 13ARC by
-						going to the website at ????????????
+						going to the website {" "}
+						<a
+							href="https://maps.findmespot.com/s/5NFW"
+							target="_blank"
+							rel="noreferrer"
+						>
+							here
+						</a>{" "}
 					</p>
 					<p className="p-text">
 						The bucket list flight covers over 2,680 nm, taking a minimum of 55
 						flying hours, with at least 41 stops and 13 hotel nights on the way.
 						To avoid convective turbulence, each day the starting time will be 6
-						am and last flight of the day will terminate around 11 am. The
-						tentative stops planned are:
+						am and last flight of the day will terminate around 11 am.
 					</p>
 				</div>
 				<div>
 					<div className="app__blog-footer">
 						<h1>Follow the trip in real time from the blog</h1>
-						<a href="https://www.google.com" target="blank">Starting Soon</a>
+						<a href="https://www.google.com" target="blank">
+							Starting Soon
+						</a>
 					</div>
 					<div className="app__blog-footer">
 						<h1>Or from the in-flight tracker</h1>
-						<a href="https://flightaware.com/live/flight/13ARC" target="blank">Starting Soon</a>
+						<a href="https://flightaware.com/live/flight/13ARC" target="blank">
+							Starting Soon
+						</a>
 					</div>
 				</div>
-				
 			</div>
 		</>
 	)
