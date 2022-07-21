@@ -144,7 +144,7 @@ const Blog = () => {
 				<div>
 					<div className="app__blog-footer">
 						<h1>Follow the trip in real time from the blog</h1>
-						<a href="https://romi-blog.live" target="blank">
+						<a href="https://www.romi-blog.live/" target="blank">
 							Click Here
 						</a>
 					</div>
