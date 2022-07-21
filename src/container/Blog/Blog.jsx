@@ -144,14 +144,14 @@ const Blog = () => {
 				<div>
 					<div className="app__blog-footer">
 						<h1>Follow the trip in real time from the blog</h1>
-						<a href="https://www.google.com" target="blank">
-							Starting Soon
+						<a href="https://arc-blog.vercel.app/" target="blank">
+							Click Here
 						</a>
 					</div>
 					<div className="app__blog-footer">
 						<h1>Or from the in-flight tracker</h1>
 						<a href="https://flightaware.com/live/flight/13ARC" target="blank">
-							Starting Soon
+							Click Here
 						</a>
 					</div>
 				</div>
